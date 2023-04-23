@@ -10,7 +10,17 @@ struct TokamakApp: App {
 }
 
 struct ContentView: View {
+    @State var count = 0
+
     var body: some View {
-        Text("Hello, world!")
+        VStack {
+            Text("Hello from swift!")
+
+            Text("Counter: \(count)")
+
+            Button("Tap this!") {
+                count += 1
+            }
+        }
     }
 }

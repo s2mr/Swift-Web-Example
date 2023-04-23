@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug Swift-Web-Example",
+            "program": "${workspaceFolder:Swift-Web-Example}/.build/debug/Swift-Web-Example",
+            "args": [],
+            "cwd": "${workspaceFolder:Swift-Web-Example}",
+            "preLaunchTask": "swift: Build Debug Swift-Web-Example"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release Swift-Web-Example",
+            "program": "${workspaceFolder:Swift-Web-Example}/.build/release/Swift-Web-Example",
+            "args": [],
+            "cwd": "${workspaceFolder:Swift-Web-Example}",
+            "preLaunchTask": "swift: Build Release Swift-Web-Example"
+        }
+    ]
+}
