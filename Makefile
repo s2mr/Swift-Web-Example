@@ -15,3 +15,10 @@ pull:
 
 run:
 	docker run --name swift-web -p $(port):8000 --rm $(IMAGE)
+
+deploy:
+	docker context use default
+	make build push
+	docker context use conoha
+	make pull run
+	docker context use default
