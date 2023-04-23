@@ -4,6 +4,9 @@ port:=1000
 build:
 	docker build -t $(IMAGE) .
 
+build-no-cache:
+	docker build -t $(IMAGE) --no-cache .
+
 push:
 	docker push $(IMAGE)
 
@@ -11,4 +14,4 @@ pull:
 	docker pull $(IMAGE)
 
 run:
-	docker run -p $(port):80 --rm $(IMAGE)
+	docker run --name swift-web -p $(port):8000 --rm $(IMAGE)
