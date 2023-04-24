@@ -1,3 +1,3 @@
 # Swift-Web-Example
 
-A description of this package.
+https://swift.s2mr.jp/
